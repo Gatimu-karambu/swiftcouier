@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Gender Array -->
+    <string-array name="gender_array">
+        <item>Gender</item>
+        <item>Male</item>
+        <item>Female</item>
+        <item>Other</item>
+    </string-array>
+
+    <!-- County Array -->
+    <string-array name="county_array">
+        <item>County</item>
+        <item>Nairobi</item>
+        <item>Mombasa</item>
+        <item>Kisumu</item>
+        <!-- Add more counties as needed -->
+    </string-array>
+
+    <!-- Nairobi Sub-County Array -->
+    <string-array name="nairobi_sub_county_array">
+        <item>Sub-county</item>
+        <item>Westlands</item>
+        <item>Lang\'ata</item>
+        <item>Dagoretti</item>
+        <item>Kasarani</item>
+        <item>Embakasi</item>
+    </string-array>
+
+    <!-- Mombasa Sub-County Array -->
+    <string-array name="mombasa_sub_county_array">
+        <item>Nyali</item>
+        <item>Kisauni</item>
+        <item>Likoni</item>
+        <item>Changamwe</item>
+        <item>Mvita</item>
+    </string-array>
+
+    <!-- Kisumu Sub-County Array -->
+    <string-array name="kisumu_sub_county_array">
+        <item>Kisumu East</item>
+        <item>Kisumu West</item>
+        <item>Nyando</item>
+        <item>Muhoroni</item>
+        <item>Seme</item>
+    </string-array>
+
+    <!-- Nairobi Westlands Ward Array -->
+    <string-array name="westlands_ward_array">
+        <item>Kitisuru</item>
+        <item>Parklands/Highridge</item>
+        <item>Kangemi</item>
+        <item>Mountain View</item>
+        <item>Karura</item>
+    </string-array>
+
+    <!-- Nairobi Lang'ata Ward Array -->
+    <string-array name="langata_ward_array">
+        <item>Karen</item>
+        <item>Nairobi West</item>
+        <item>Mugumo-Ini</item>
+        <item>South C</item>
+        <item>Nyayo Highrise</item>
+    </string-array>
+
+    <!-- Nairobi Dagoretti Ward Array -->
+    <string-array name="dagoretti_ward_array">
+        <item>Gatina</item>
+        <item>Kilimani</item>
+        <item>Kawangware</item>
+        <item>Mutuini</item>
+        <item>Ngando</item>
+    </string-array>
+
+    <!-- Mombasa Nyali Ward Array -->
+    <string-array name="nyali_ward_array">
+        <item>Bamburi</item>
+        <item>Frere Town</item>
+        <item>Kongowea</item>
+        <item>Mkomani</item>
+        <item>Ziwa La Ng\'ombe</item>
+    </string-array>
+
+    <!-- Mombasa Kisauni Ward Array -->
+    <string-array name="kisauni_ward_array">
+        <item>Bamburi</item>
+        <item>Junda</item>
+        <item>Mwakirunge</item>
+        <item>Mshomoroni</item>
+        <item>Mtopanga</item>
+    </string-array>
+
+    <!-- Kisumu East Ward Array -->
+    <string-array name="kisumu_east_ward_array">
+        <item>Kajulu</item>
+        <item>Kolwa Central</item>
+        <item>Manyatta B</item>
+        <item>Nyalenda A</item>
+        <item>Nyalenda B</item>
+    </string-array>
+
+    <!-- Kisumu West Ward Array -->
+    <string-array name="kisumu_west_ward_array">
+        <item>Kanyawegi</item>
+        <item>Kisumu North</item>
+        <item>Kogony</item>
+        <item>Manyatta A</item>
+        <item>West Kolwa</item>
+    </string-array>
+
+    <!-- Add more sub-county and ward arrays as needed -->
+
+</resources>

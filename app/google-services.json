@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "442395292804",
+    "firebase_url": "https://courierapp-e6561-default-rtdb.firebaseio.com",
+    "project_id": "courierapp-e6561",
+    "storage_bucket": "courierapp-e6561.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:442395292804:android:b902899323181b0991bed1",
+        "android_client_info": {
+          "package_name": "com.swift.swiftcourier"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB6T4XZUs_Hn4e5MJnm0Ws-Ps9AMZInREY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
