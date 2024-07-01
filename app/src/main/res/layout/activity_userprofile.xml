@@ -18,13 +18,7 @@
             android:layout_height="wrap_content"
             android:hint="Full Name" />
 
-        <!-- Email Address -->
-        <EditText
-            android:id="@+id/emailEditText"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Email Address"
-            android:inputType="textEmailAddress" />
+
 
         <!-- Phone Number -->
         <EditText
@@ -34,14 +28,6 @@
             android:hint="Phone Number"
             android:inputType="phone" />
 
-
-        <!-- Password -->
-        <EditText
-            android:id="@+id/passwordEditText"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Password"
-            android:inputType="textPassword" />
 
         <!--Gender-->
         <Spinner
@@ -99,23 +85,14 @@
             android:text="Push Notifications" />
 
         <!-- Functional Features -->
-        <Button
-            android:id="@+id/editProfileButton"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Edit Profile" />
 
-        <Button
-            android:id="@+id/changePasswordButton"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Change Password" />
+
 
         <Button
             android:id="@+id/deleteAccountButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Delete Account"
-            android:textColor="@android:color/holo_red_dark" />
+            android:text="Submit"
+            android:textColor="@color/white" />
     </LinearLayout>
 </ScrollView>

@@ -67,9 +67,9 @@ public class SignIn extends AppCompatActivity {
 
                             // Stop the animation
                             lottieAnimationView.cancelAnimation();
-                            Intent intent = new Intent(SignIn.this, MainActivity.class);
+                            /*Intent intent = new Intent(SignIn.this, MainActivity.class);
                             startActivity(intent);
-                            finish();
+                            finish();*/
                         }
                     },5000); // Close the login activity
                 } else {

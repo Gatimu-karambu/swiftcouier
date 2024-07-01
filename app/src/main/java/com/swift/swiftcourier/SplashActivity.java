@@ -40,7 +40,7 @@ public class SplashActivity extends AppCompatActivity {
                     lottieOverlay.setVisibility(View.GONE);
 
                     lottieAnimationView.cancelAnimation();
-                    Intent intent = new Intent(SplashActivity.this,  MainActivity.class);
+                    Intent intent = new Intent(SplashActivity.this,  SignUp.class);
                     startActivity(intent);
                     finish();
                 }
@@ -52,9 +52,9 @@ public class SplashActivity extends AppCompatActivity {
                     lottieOverlay.setVisibility(View.GONE);
 
                     lottieAnimationView.cancelAnimation();
-                    Intent intent = new Intent(SplashActivity.this, MainActivity.class);
+                   /* Intent intent = new Intent(SplashActivity.this, MainActivity.class);
                     startActivity(intent);
-                    finish();
+                    finish();*/
                 }
             }, 3000);
         }

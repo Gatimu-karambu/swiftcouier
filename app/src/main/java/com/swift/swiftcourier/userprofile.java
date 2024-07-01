@@ -20,7 +20,7 @@ public class userprofile extends AppCompatActivity {
     private ImageView profilePhotoImageView;
     private Spinner genderSpinner, countySpinner, subCountySpinner, wardSpinner;
     private CheckBox emailCheckBox, smsCheckBox, pushNotificationCheckBox;
-    private Button uploadPhotoButton, editProfileButton, changePasswordButton, deleteAccountButton;
+    private Button  submitButton;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -28,9 +28,7 @@ public class userprofile extends AppCompatActivity {
         setContentView(R.layout.activity_userprofile);
 
         fullNameEditText = findViewById(R.id.fullNameEditText);
-        emailEditText = findViewById(R.id.emailEditText);
         phoneEditText = findViewById(R.id.phoneEditText);
-        passwordEditText = findViewById(R.id.passwordEditText);
         genderSpinner = findViewById(R.id.genderSpinner);
         countySpinner = findViewById(R.id.countySpinner);
         subCountySpinner = findViewById(R.id.subCountySpinner);
@@ -38,9 +36,7 @@ public class userprofile extends AppCompatActivity {
         emailCheckBox = findViewById(R.id.emailCheckBox);
         smsCheckBox = findViewById(R.id.smsCheckBox);
         pushNotificationCheckBox = findViewById(R.id.pushNotificationCheckBox);
-        editProfileButton = findViewById(R.id.editProfileButton);
-        changePasswordButton = findViewById(R.id.changePasswordButton);
-        deleteAccountButton = findViewById(R.id.deleteAccountButton);
+        submitButton = findViewById(R.id.deleteAccountButton);
 
         // Populate the gender spinner
         ArrayAdapter<CharSequence> genderAdapter = ArrayAdapter.createFromResource(this, R.array.gender_array, android.R.layout.simple_spinner_item);
@@ -104,22 +100,12 @@ public class userprofile extends AppCompatActivity {
         // Handle profile photo upload
 
 
-        // Handle edit profile
-        editProfileButton.setOnClickListener(v -> {
-            // Code to edit profile
-            Toast.makeText(userprofile.this, "Edit Profile clicked", Toast.LENGTH_SHORT).show();
-        });
 
-        // Handle change password
-        changePasswordButton.setOnClickListener(v -> {
-            // Code to change password
-            Toast.makeText(userprofile.this, "Change Password clicked", Toast.LENGTH_SHORT).show();
-        });
 
         // Handle delete account
-        deleteAccountButton.setOnClickListener(v -> {
+        submitButton.setOnClickListener(v -> {
             // Code to delete account
-            Toast.makeText(userprofile.this, "Delete Account clicked", Toast.LENGTH_SHORT).show();
+            Toast.makeText(userprofile.this, "Submitted", Toast.LENGTH_SHORT).show();
         });
     }
 

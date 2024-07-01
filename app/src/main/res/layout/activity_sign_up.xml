@@ -64,46 +64,19 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Sign Up"
+                android:layout_marginTop="70dp"
                 android:textColor="#04BA86"
                 android:textSize="25sp" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
+                android:layout_marginTop="30dp"
                 android:orientation="vertical"
                 android:layout_marginBottom="20dp">
 
-                <com.google.android.material.textfield.TextInputLayout
-                    android:id="@+id/name"
-                    style="@style/CustomTextInputLayout"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="Enter your Name"
-                    app:hintTextAppearance="@style/CustomHintTextAppearance">
 
-                    <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/name_edittext"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:textColor="@color/black" />
-                </com.google.android.material.textfield.TextInputLayout>
 
-                <com.google.android.material.textfield.TextInputLayout
-                    android:id="@+id/phone_number"
-                    style="@style/CustomTextInputLayout"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="Enter your Phone Number"
-                    app:hintTextAppearance="@style/CustomHintTextAppearance">
-
-                    <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/phone_number_edittext"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:inputType="phone"
-                        android:textColor="@color/black" />
-                </com.google.android.material.textfield.TextInputLayout>
 
                 <com.google.android.material.textfield.TextInputLayout
                     android:id="@+id/username"
