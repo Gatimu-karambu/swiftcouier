@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/etOrderFrom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Order From" />
+
+    <EditText
+        android:id="@+id/etOrderTo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Order To" />
+    <EditText
+        android:id="@+id/rp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Receiver's Phone number" />
+
+    <Button
+        android:id="@+id/btnCreateOrder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Create Order" />
+
+</LinearLayout>
