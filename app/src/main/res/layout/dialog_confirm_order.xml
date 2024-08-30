@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="@drawable/dialog_background">
+
+    <TextView
+        android:id="@+id/tvDialogTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Confirm Order"
+        android:textAppearance="?attr/textAppearanceHeadline6"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:paddingBottom="10dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvDialogMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="The shipment price is KES 0. Do you want to confirm the order?"
+        android:paddingBottom="10dp"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:gravity="center" />
+
+
+    <TextView
+        android:id="@+id/r"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="PayBill: 990990"
+        android:paddingBottom="10dp"
+        android:textColor="#3DD9E6"
+        android:textSize="16sp"
+        android:gravity="center" />
+
+
+
+    <TextView
+        android:id="@+id/rS"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Account: SwiftCourier"
+        android:paddingBottom="10dp"
+        android:textColor="#3DD9E6"
+        android:textSize="16sp"
+        android:gravity="center" />
+
+
+
+
+
+
+
+    <EditText
+        android:id="@+id/etConfirmationMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Mpesa confirmation Code"
+        android:textColorHint="#383838"
+        android:background="@drawable/custom_edittext"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:inputType="text" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:paddingTop="10dp">
+
+        <Button
+            android:id="@+id/btnConfirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Confirm"
+            android:textColor="@color/white"
+            android:layout_margin="5dp"
+            android:textSize="20sp"
+            android:background="@drawable/button_background" />
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancel"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:layout_margin="5dp"
+            android:background="@drawable/button_background" />
+    </LinearLayout>
+</LinearLayout>

@@ -4,4 +4,11 @@
         <!-- Customize your dark theme here. -->
          <item name="colorPrimary">#04BA86</item>
     </style>
+
+
+    <style name="Home" parent="Theme.MaterialComponents.NoActionBar">
+        <!--Customize your light theme here. -->
+        <item name="colorPrimary">#04BA86</item>
+        <item name="android:statusBarColor">#000000</item>
+    </style>
 </resources>

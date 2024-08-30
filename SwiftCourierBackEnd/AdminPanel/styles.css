@@ -1,0 +1,133 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+}
+
+#loginForm, #mainContent {
+    background: #fff;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+input[type="text"], input[type="password"], select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button {
+    display: inline-block;
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+button:hover {
+    background: #555;
+}
+
+nav {
+    margin-bottom: 20px;
+}
+
+nav button {
+    margin-right: 10px;
+}
+
+.order-item {
+    background: #fff;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.order-item h3 {
+    margin-top: 0;
+    color: #444;
+}
+
+.order-item p {
+    margin: 5px 0;
+}
+
+#chatMessages {
+    height: 300px;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+    background: #fff;
+}
+
+.message {
+    background: #e6e6e6;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+#chatInput {
+    display: flex;
+}
+
+#messageInput {
+    flex-grow: 1;
+    margin-right: 10px;
+}
+
+#chatInput button {
+    width: auto;
+}
+#chatMessages {
+    height: 300px;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+    background: #fff;
+}
+
+.message {
+    max-width: 70%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    clear: both;
+}
+
+.message.admin {
+    float: right;
+    background-color: #dcf8c6;
+}
+
+.message.user {
+    float: left;
+    background-color: #f1f0f0;
+}

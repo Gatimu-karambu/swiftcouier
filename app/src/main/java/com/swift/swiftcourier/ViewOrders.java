@@ -1,12 +1,13 @@
 package com.swift.swiftcourier;
 
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.Base64;
 import android.util.Log;
 import android.widget.ListView;
-import android.widget.ArrayAdapter;
 import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
@@ -18,38 +19,59 @@ import org.json.JSONException;
 import org.json.JSONObject;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 public class ViewOrders extends AppCompatActivity {
     private static final String TAG = "ViewOrders";
     private ListView listViewOrders;
-    private ArrayList<String> orderList;
-    private ArrayAdapter<String> adapter;
+    private List<JSONObject> orderList;
+    private OrdersAdapter ordersAdapter;
     private RequestQueue requestQueue;
-    private static final String URL = "http://192.168.189.118:5000/get_orders"; // Replace with your PC's IP
+    private String savedOrderId;
+    private OrderDBHelper dbHelper;
+    private static final String URL = "https://0cb2e181574cd319a3d4c0d246233991.serveo.net/get_orders"; // Replace with your PC's IP
+    private SwipeRefreshLayout swipeRefreshLayout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_view_orders);
 
+
+
         listViewOrders = findViewById(R.id.listViewOrders);
+        swipeRefreshLayout = findViewById(R.id.swipeRefreshLayout);
         orderList = new ArrayList<>();
-        adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, orderList);
-        listViewOrders.setAdapter(adapter);
+        ordersAdapter = new OrdersAdapter(this, orderList);
+        listViewOrders.setAdapter(ordersAdapter);
 
         requestQueue = Volley.newRequestQueue(this);
+        SharedPreferences sharedPreferences = getSharedPreferences("OrderPrefs", MODE_PRIVATE);
+        savedOrderId = sharedPreferences.getString("saved_order_id", null);
+
+        swipeRefreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
+            @Override
+            public void onRefresh() {
+                fetchOrders();
+            }
+        });
+
+        dbHelper = new OrderDBHelper(this);
 
         fetchOrders();
     }
 
     private void fetchOrders() {
+
+        swipeRefreshLayout.setRefreshing(true);
         JsonArrayRequest jsonArrayRequest = new JsonArrayRequest(Request.Method.GET, URL, null,
                 new Response.Listener<JSONArray>() {
                     @Override
                     public void onResponse(JSONArray response) {
                         Log.d(TAG, "Orders fetched successfully. Response: " + response.toString());
                         parseOrders(response);
+                        swipeRefreshLayout.setRefreshing(false);
                     }
                 },
                 new Response.ErrorListener() {
@@ -57,6 +79,7 @@ public class ViewOrders extends AppCompatActivity {
                     public void onErrorResponse(VolleyError error) {
                         Log.e(TAG, "Error fetching orders", error);
                         Toast.makeText(ViewOrders.this, "Error fetching orders", Toast.LENGTH_SHORT).show();
+                        swipeRefreshLayout.setRefreshing(false);
                     }
                 }) {
             @Override
@@ -77,13 +100,12 @@ public class ViewOrders extends AppCompatActivity {
         try {
             for (int i = 0; i < jsonArray.length(); i++) {
                 JSONObject order = jsonArray.getJSONObject(i);
-                String orderString = "Order ID: " + order.getString("order_id") +
-                        "\nFrom: " + order.getString("order_from") +
-                        "\nTo: " + order.getString("order_to") +
-                        "\nStatus: " + order.getString("status");
-                orderList.add(orderString);
+                String orderId = order.getString("order_id");
+                if (dbHelper.isOrderIdPresent(orderId)) {
+                    orderList.add(order);
+                }
             }
-            adapter.notifyDataSetChanged();
+            ordersAdapter.notifyDataSetChanged();
         } catch (JSONException e) {
             Log.e(TAG, "Error parsing JSON", e);
             Toast.makeText(this, "Error parsing order data", Toast.LENGTH_SHORT).show();

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Print Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+        }
+
+        #printButton {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        #printButton:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Custom Print Button Example</h1>
+    <p>This page demonstrates custom print functionality and context menu handling.</p>
+    <button id="printButton">Print or Save as PDF</button>
+
+    <script>
+        // Function to handle custom print
+        function customPrint() {
+            window.print();
+        }
+
+        // Add event listener to the custom print button
+        document.getElementById('printButton').addEventListener('click', function() {
+            customPrint();
+        });
+
+        // Disable right-click context menu
+        document.addEventListener('contextmenu', function(event) {
+            event.preventDefault();
+        });
+
+        // Intercept Ctrl+P / Cmd+P print command
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'p' && (event.ctrlKey || event.metaKey)) {
+                event.preventDefault();
+                //customPrint();
+            }
+        });
+    </script>
+</body>
+</html>

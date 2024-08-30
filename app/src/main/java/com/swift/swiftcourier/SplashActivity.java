@@ -12,8 +12,8 @@ import com.airbnb.lottie.LottieAnimationView;
 
 public class SplashActivity extends AppCompatActivity {
 
-    private static final String PREFS_NAME = "MyPrefsFile";
-    private static final String KEY_FIRST_TIME = "firstTime";
+    private static final String PREFS_NAME = "YourPrefsFile";
+    private static final String KEY_FIRST_TIME = "isFirstTime";
     LottieAnimationView lottieAnimationView;
     private View lottieOverlay;
     @Override
@@ -21,8 +21,8 @@ public class SplashActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_slapsh_screen);
 
-        SharedPreferences preferences = getSharedPreferences(PREFS_NAME, MODE_PRIVATE);
-        boolean isFirstTime = preferences.getBoolean(KEY_FIRST_TIME, true);
+        SharedPreferences prefs = getSharedPreferences(PREFS_NAME, MODE_PRIVATE);
+        boolean isFirstTime = prefs.getBoolean(KEY_FIRST_TIME, true);
 
         lottieAnimationView=findViewById(R.id.lottieAnimationView);
         lottieOverlay = findViewById(R.id.lottieOverlay);
@@ -38,9 +38,11 @@ public class SplashActivity extends AppCompatActivity {
                 @Override
                 public void run() {
                     lottieOverlay.setVisibility(View.GONE);
-
+                    SharedPreferences.Editor editor = prefs.edit();
+                    editor.putBoolean(KEY_FIRST_TIME, false);
+                    editor.apply();
                     lottieAnimationView.cancelAnimation();
-                    Intent intent = new Intent(SplashActivity.this,  Home.class);
+                    Intent intent = new Intent(SplashActivity.this, SignUp.class);
                     startActivity(intent);
                     finish();
                 }

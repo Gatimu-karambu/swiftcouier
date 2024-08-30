@@ -1,0 +1,812 @@
+ * Serving Flask app 'app'
+ * Debug mode: on
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.16:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 761-506-798
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 19:37:48] "GET /get_messages?user=user&since=0 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.16 - - [08/Aug/2024 19:37:49] "OPTIONS /get_messages HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.16 - - [08/Aug/2024 19:37:49] "GET /get_messages HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 19:37:51] "GET /get_messages?user=user&since=1723134981000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 19:37:53] "GET /get_messages?user=user&since=1723134981000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.16 - - [08/Aug/2024 19:37:54] "GET /get_messages HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 19:37:55] "GET /get_messages?user=user&since=1723134981000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 19:37:55] "GET /get_messages?user=user&since=1723134981000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 19:37:57] "GET /get_messages?user=user&since=1723134981000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.16 - - [08/Aug/2024 19:37:59] "OPTIONS /get_messages HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.16 - - [08/Aug/2024 19:37:59] "GET /get_messages HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 19:37:59] "GET /get_messages?user=user&since=1723134981000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 19:38:02] "GET /get_messages?user=user&since=1723134981000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 19:38:03] "GET /get_messages?user=user&since=1723134981000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.16 - - [08/Aug/2024 19:38:04] "GET /get_messages HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 19:38:05] "GET /get_messages?user=user&since=1723134981000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 19:38:08] "GET /get_messages?user=user&since=1723134981000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.16 - - [08/Aug/2024 19:38:09] "OPTIONS /get_messages HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.16 - - [08/Aug/2024 19:38:09] "GET /get_messages HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 19:38:09] "GET /get_messages?user=user&since=1723134981000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 19:38:12] "GET /get_messages?user=user&since=1723134981000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 19:38:14] "GET /get_messages?user=user&since=1723134981000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.16 - - [08/Aug/2024 19:38:14] "GET /get_messages HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 19:38:16] "GET /get_messages?user=user&since=1723134981000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 19:38:18] "GET /get_messages?user=user&since=1723134981000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.16 - - [08/Aug/2024 19:38:19] "OPTIONS /get_messages HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.16 - - [08/Aug/2024 19:38:19] "GET /get_messages HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 19:38:21] "GET /get_messages?user=user&since=1723134981000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 19:38:21] "GET /get_messages?user=user&since=1723134981000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 19:38:23] "GET /get_messages?user=user&since=1723134981000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.16 - - [08/Aug/2024 19:38:24] "GET /get_messages HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 19:38:25] "GET /get_messages?user=user&since=1723134981000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 19:38:28] "GET /get_messages?user=user&since=1723134981000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.16 - - [08/Aug/2024 19:38:29] "OPTIONS /get_messages HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.16 - - [08/Aug/2024 19:38:29] "GET /get_messages HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 19:38:31] "GET /get_messages?user=user&since=1723134981000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 19:38:32] "GET /get_messages?user=user&since=1723134981000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 19:38:33] "GET /get_messages?user=user&since=1723134981000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.16 - - [08/Aug/2024 19:38:34] "GET /get_messages HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 19:38:35] "GET /get_messages?user=user&since=1723134981000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 19:38:38] "GET /get_messages?user=user&since=1723134981000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.16 - - [08/Aug/2024 19:38:39] "OPTIONS /get_messages HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.16 - - [08/Aug/2024 19:38:39] "GET /get_messages HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 19:38:39] "GET /get_messages?user=user&since=1723134981000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 19:38:41] "GET /get_messages?user=user&since=1723134981000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.16 - - [08/Aug/2024 19:38:44] "GET /get_messages HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 19:38:44] "GET /get_messages?user=user&since=1723134981000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 19:38:45] "GET /get_messages?user=user&since=1723134981000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 19:38:48] "GET /get_messages?user=user&since=1723134981000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.16 - - [08/Aug/2024 19:38:49] "OPTIONS /get_messages HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.16 - - [08/Aug/2024 19:38:49] "GET /get_messages HTTP/1.1" 200 -
+ * Serving Flask app 'app'
+ * Debug mode: on
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.16:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 761-506-798
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 19:39:08] "GET /get_messages?user=user&since=0 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.16 - - [08/Aug/2024 19:39:09] "OPTIONS /get_messages HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.16 - - [08/Aug/2024 19:39:09] "GET /get_messages HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 19:39:10] "GET /get_messages?user=user&since=1723134981000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 19:39:12] "GET /get_messages?user=user&since=1723134981000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.16 - - [08/Aug/2024 19:39:14] "GET /get_messages HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 19:39:14] "GET /get_messages?user=user&since=1723134981000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 19:39:18] "GET /get_messages?user=user&since=1723134981000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 19:39:18] "GET /get_messages?user=user&since=1723134981000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.16 - - [08/Aug/2024 19:39:19] "OPTIONS /get_messages HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.16 - - [08/Aug/2024 19:39:19] "GET /get_messages HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 19:39:20] "GET /get_messages?user=user&since=1723134981000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 19:39:22] "GET /get_messages?user=user&since=1723134981000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.16 - - [08/Aug/2024 19:39:24] "GET /get_messages HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 19:39:24] "GET /get_messages?user=user&since=1723134981000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 19:39:26] "GET /get_messages?user=user&since=1723134981000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 19:39:28] "GET /get_messages?user=user&since=1723134981000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.16 - - [08/Aug/2024 19:39:29] "OPTIONS /get_messages HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.16 - - [08/Aug/2024 19:39:29] "GET /get_messages HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 19:39:30] "GET /get_messages?user=user&since=1723134981000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 19:39:33] "GET /get_messages?user=user&since=1723134981000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.16 - - [08/Aug/2024 19:39:34] "GET /get_messages HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 19:39:34] "GET /get_messages?user=user&since=1723134981000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 19:39:36] "GET /get_messages?user=user&since=1723134981000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 19:39:38] "GET /get_messages?user=user&since=1723134981000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.16 - - [08/Aug/2024 19:39:39] "OPTIONS /get_messages HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.16 - - [08/Aug/2024 19:39:39] "GET /get_messages HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 19:39:40] "GET /get_messages?user=user&since=1723134981000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 19:39:42] "GET /get_messages?user=user&since=1723134981000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.16 - - [08/Aug/2024 19:39:44] "GET /get_messages HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 19:39:44] "GET /get_messages?user=user&since=1723134981000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 19:39:46] "GET /get_messages?user=user&since=1723134981000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 19:39:49] "GET /get_messages?user=user&since=1723134981000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.16 - - [08/Aug/2024 19:39:49] "OPTIONS /get_messages HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.16 - - [08/Aug/2024 19:39:49] "GET /get_messages HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 19:39:50] "GET /get_messages?user=user&since=1723134981000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 19:39:52] "GET /get_messages?user=user&since=1723134981000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.16 - - [08/Aug/2024 19:39:54] "GET /get_messages HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 19:39:54] "GET /get_messages?user=user&since=1723134981000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 19:39:56] "GET /get_messages?user=user&since=1723134981000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 19:39:58] "GET /get_messages?user=user&since=1723134981000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.16 - - [08/Aug/2024 19:39:59] "OPTIONS /get_messages HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.16 - - [08/Aug/2024 19:39:59] "GET /get_messages HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 19:40:00] "GET /get_messages?user=user&since=1723134981000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 19:40:02] "GET /get_messages?user=user&since=1723134981000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.16 - - [08/Aug/2024 19:40:04] "GET /get_messages HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 19:40:04] "GET /get_messages?user=user&since=1723134981000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 19:40:06] "GET /get_messages?user=user&since=1723134981000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 19:40:08] "GET /get_messages?user=user&since=1723134981000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.16 - - [08/Aug/2024 19:40:09] "OPTIONS /get_messages HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.16 - - [08/Aug/2024 19:40:09] "GET /get_messages HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 19:40:10] "GET /get_messages?user=user&since=1723134981000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 19:40:12] "GET /get_messages?user=user&since=1723134981000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.16 - - [08/Aug/2024 19:40:14] "GET /get_messages HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 19:40:14] "GET /get_messages?user=user&since=1723134981000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 19:40:16] "GET /get_messages?user=user&since=1723134981000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 19:40:18] "GET /get_messages?user=user&since=1723134981000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.16 - - [08/Aug/2024 19:40:19] "OPTIONS /get_messages HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.16 - - [08/Aug/2024 19:40:19] "GET /get_messages HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 19:40:20] "GET /get_messages?user=user&since=1723134981000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 19:40:23] "GET /get_messages?user=user&since=1723134981000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.16 - - [08/Aug/2024 19:40:24] "GET /get_messages HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 19:40:25] "GET /get_messages?user=user&since=1723134981000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 19:40:26] "GET /get_messages?user=user&since=1723134981000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 19:40:28] "GET /get_messages?user=user&since=1723134981000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.16 - - [08/Aug/2024 19:40:29] "OPTIONS /get_messages HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.16 - - [08/Aug/2024 19:40:29] "GET /get_messages HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 19:40:30] "GET /get_messages?user=user&since=1723134981000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 19:40:32] "GET /get_messages?user=user&since=1723134981000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.16 - - [08/Aug/2024 19:40:34] "GET /get_messages HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 19:40:34] "GET /get_messages?user=user&since=1723134981000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 19:40:37] "GET /get_messages?user=user&since=1723134981000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.16 - - [08/Aug/2024 19:40:39] "OPTIONS /get_messages HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.16 - - [08/Aug/2024 19:40:39] "GET /get_messages HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 19:40:40] "GET /get_messages?user=user&since=1723134981000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 19:40:42] "GET /get_messages?user=user&since=1723134981000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 19:40:42] "GET /get_messages?user=user&since=1723134981000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.16 - - [08/Aug/2024 19:40:44] "GET /get_messages HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 19:40:45] "GET /get_messages?user=user&since=1723134981000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 19:40:47] "GET /get_messages?user=user&since=1723134981000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 19:40:48] "GET /get_messages?user=user&since=1723134981000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.16 - - [08/Aug/2024 19:40:49] "OPTIONS /get_messages HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.16 - - [08/Aug/2024 19:40:49] "GET /get_messages HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 19:40:51] "GET /get_messages?user=user&since=1723134981000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 19:40:53] "GET /get_messages?user=user&since=1723134981000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.16 - - [08/Aug/2024 19:40:54] "GET /get_messages HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 19:40:55] "GET /get_messages?user=user&since=1723134981000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 19:40:57] "GET /get_messages?user=user&since=1723134981000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 19:40:59] "GET /get_messages?user=user&since=1723134981000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.16 - - [08/Aug/2024 19:40:59] "OPTIONS /get_messages HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.16 - - [08/Aug/2024 19:40:59] "GET /get_messages HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 19:41:01] "GET /get_messages?user=user&since=1723134981000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 19:41:03] "GET /get_messages?user=user&since=1723134981000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.16 - - [08/Aug/2024 19:41:04] "GET /get_messages HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 19:41:05] "GET /get_messages?user=user&since=1723134981000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 19:41:07] "GET /get_messages?user=user&since=1723134981000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 19:41:09] "GET /get_messages?user=user&since=1723134981000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.16 - - [08/Aug/2024 19:41:09] "OPTIONS /get_messages HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.16 - - [08/Aug/2024 19:41:09] "GET /get_messages HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 19:41:11] "GET /get_messages?user=user&since=1723134981000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 19:41:13] "GET /get_messages?user=user&since=1723134981000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.16 - - [08/Aug/2024 19:41:14] "GET /get_messages HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 19:41:15] "GET /get_messages?user=user&since=1723134981000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 19:41:17] "GET /get_messages?user=user&since=1723134981000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 19:41:19] "GET /get_messages?user=user&since=1723134981000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.16 - - [08/Aug/2024 19:41:19] "OPTIONS /get_messages HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.16 - - [08/Aug/2024 19:41:19] "GET /get_messages HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 19:41:21] "GET /get_messages?user=user&since=1723134981000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 19:41:23] "GET /get_messages?user=user&since=1723134981000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.16 - - [08/Aug/2024 19:41:24] "GET /get_messages HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 19:41:25] "GET /get_messages?user=user&since=1723134981000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 19:41:27] "GET /get_messages?user=user&since=1723134981000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.16 - - [08/Aug/2024 19:41:29] "OPTIONS /get_messages HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.16 - - [08/Aug/2024 19:41:29] "GET /get_messages HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 19:41:29] "GET /get_messages?user=user&since=1723134981000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 19:41:31] "GET /get_messages?user=user&since=1723134981000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 19:41:33] "GET /get_messages?user=user&since=1723134981000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.16 - - [08/Aug/2024 19:41:34] "GET /get_messages HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 19:41:35] "GET /get_messages?user=user&since=1723134981000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 19:41:37] "GET /get_messages?user=user&since=1723134981000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.16 - - [08/Aug/2024 19:41:39] "OPTIONS /get_messages HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.16 - - [08/Aug/2024 19:41:39] "GET /get_messages HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 19:41:39] "GET /get_messages?user=user&since=1723134981000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 19:41:41] "GET /get_messages?user=user&since=1723134981000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 19:41:43] "GET /get_messages?user=user&since=1723134981000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.16 - - [08/Aug/2024 19:41:44] "GET /get_messages HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 19:41:45] "GET /get_messages?user=user&since=1723134981000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 19:41:47] "GET /get_messages?user=user&since=1723134981000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.16 - - [08/Aug/2024 19:41:49] "OPTIONS /get_messages HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.16 - - [08/Aug/2024 19:41:49] "GET /get_messages HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 19:41:49] "GET /get_messages?user=user&since=1723134981000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 19:41:51] "GET /get_messages?user=user&since=1723134981000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 19:41:53] "GET /get_messages?user=user&since=1723134981000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.16 - - [08/Aug/2024 19:41:54] "GET /get_messages HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 19:41:55] "GET /get_messages?user=user&since=1723134981000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 19:41:57] "GET /get_messages?user=user&since=1723134981000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.16 - - [08/Aug/2024 19:41:59] "OPTIONS /get_messages HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.16 - - [08/Aug/2024 19:41:59] "GET /get_messages HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 19:41:59] "GET /get_messages?user=user&since=1723134981000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 19:42:01] "GET /get_messages?user=user&since=1723134981000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 19:42:03] "GET /get_messages?user=user&since=1723134981000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.16 - - [08/Aug/2024 19:42:04] "GET /get_messages HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 19:42:05] "GET /get_messages?user=user&since=1723134981000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.16 - - [08/Aug/2024 19:42:09] "OPTIONS /get_messages HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.16 - - [08/Aug/2024 19:42:09] "GET /get_messages HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.16 - - [08/Aug/2024 19:42:14] "GET /get_messages HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.16 - - [08/Aug/2024 19:42:19] "OPTIONS /get_messages HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.16 - - [08/Aug/2024 19:42:19] "GET /get_messages HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.16 - - [08/Aug/2024 19:42:24] "GET /get_messages HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.16 - - [08/Aug/2024 19:42:29] "OPTIONS /get_messages HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.16 - - [08/Aug/2024 19:42:29] "GET /get_messages HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.16 - - [08/Aug/2024 19:42:34] "GET /get_messages HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.16 - - [08/Aug/2024 19:42:39] "OPTIONS /get_messages HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.16 - - [08/Aug/2024 19:42:39] "GET /get_messages HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.16 - - [08/Aug/2024 19:42:44] "GET /get_messages HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.16 - - [08/Aug/2024 19:42:49] "OPTIONS /get_messages HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.16 - - [08/Aug/2024 19:42:49] "GET /get_messages HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.16 - - [08/Aug/2024 19:42:54] "GET /get_messages HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.16 - - [08/Aug/2024 19:42:59] "OPTIONS /get_messages HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.16 - - [08/Aug/2024 19:42:59] "GET /get_messages HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.16 - - [08/Aug/2024 19:43:04] "GET /get_messages HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.16 - - [08/Aug/2024 19:43:09] "OPTIONS /get_messages HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.16 - - [08/Aug/2024 19:43:09] "GET /get_messages HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.16 - - [08/Aug/2024 19:43:14] "GET /get_messages HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.16 - - [08/Aug/2024 19:43:19] "OPTIONS /get_messages HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.16 - - [08/Aug/2024 19:43:19] "GET /get_messages HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.16 - - [08/Aug/2024 19:43:24] "GET /get_messages HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.16 - - [08/Aug/2024 19:43:29] "OPTIONS /get_messages HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.16 - - [08/Aug/2024 19:43:29] "GET /get_messages HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.16 - - [08/Aug/2024 19:43:34] "GET /get_messages HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.16 - - [08/Aug/2024 19:43:39] "OPTIONS /get_messages HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.16 - - [08/Aug/2024 19:43:39] "GET /get_messages HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.16 - - [08/Aug/2024 19:43:44] "GET /get_messages HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.16 - - [08/Aug/2024 19:43:49] "OPTIONS /get_messages HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.16 - - [08/Aug/2024 19:43:49] "GET /get_messages HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.16 - - [08/Aug/2024 19:43:54] "GET /get_messages HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.16 - - [08/Aug/2024 19:43:59] "OPTIONS /get_messages HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.16 - - [08/Aug/2024 19:43:59] "GET /get_messages HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.16 - - [08/Aug/2024 19:44:04] "GET /get_messages HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.16 - - [08/Aug/2024 19:44:09] "OPTIONS /get_messages HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.16 - - [08/Aug/2024 19:44:09] "GET /get_messages HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.16 - - [08/Aug/2024 19:44:14] "GET /get_messages HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.16 - - [08/Aug/2024 19:44:19] "OPTIONS /get_messages HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.16 - - [08/Aug/2024 19:44:19] "GET /get_messages HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.16 - - [08/Aug/2024 19:44:24] "GET /get_messages HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.16 - - [08/Aug/2024 19:44:38] "OPTIONS /login HTTP/1.1" 200 -
+DEBUG:root:Login data: {'username': 'panel', 'password': 'panel234'}
+INFO:werkzeug:192.168.0.16 - - [08/Aug/2024 19:44:38] "POST /login HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.16 - - [08/Aug/2024 19:44:38] "OPTIONS /get_orders HTTP/1.1" 200 -
+DEBUG:root:Authorization: Basic cGFuZWw6cGFuZWwyMzQ=
+INFO:werkzeug:192.168.0.16 - - [08/Aug/2024 19:44:38] "GET /get_orders HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Aug/2024 19:56:27] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Aug/2024 19:56:28] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [08/Aug/2024 19:58:37] "OPTIONS /login HTTP/1.1" 200 -
+DEBUG:root:Login data: {'username': 'panel', 'password': 'panel234'}
+INFO:werkzeug:127.0.0.1 - - [08/Aug/2024 19:58:38] "POST /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Aug/2024 19:58:39] "OPTIONS /get_orders HTTP/1.1" 200 -
+DEBUG:root:Authorization: Basic cGFuZWw6cGFuZWwyMzQ=
+INFO:werkzeug:127.0.0.1 - - [08/Aug/2024 19:58:40] "GET /get_orders HTTP/1.1" 200 -
+ * Serving Flask app 'app'
+ * Debug mode: on
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.16:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 761-506-798
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:00:32] "GET /get_messages?user=user&since=0 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:00:34] "GET /get_messages?user=user&since=1723134981000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:00:36] "GET /get_messages?user=user&since=1723134981000 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Aug/2024 20:00:37] "OPTIONS /login HTTP/1.1" 200 -
+DEBUG:root:Login data: {'username': 'panel', 'password': 'panel234'}
+INFO:werkzeug:127.0.0.1 - - [08/Aug/2024 20:00:37] "POST /login HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:00:38] "GET /get_messages?user=user&since=1723134981000 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Aug/2024 20:00:38] "OPTIONS /get_orders HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Aug/2024 20:00:38] "OPTIONS /login HTTP/1.1" 200 -
+DEBUG:root:Authorization: Basic cGFuZWw6cGFuZWwyMzQ=
+INFO:werkzeug:127.0.0.1 - - [08/Aug/2024 20:00:38] "GET /get_orders HTTP/1.1" 200 -
+DEBUG:root:Login data: {'username': 'panel', 'password': 'panel234'}
+INFO:werkzeug:127.0.0.1 - - [08/Aug/2024 20:00:39] "POST /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Aug/2024 20:00:39] "OPTIONS /get_orders HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:00:40] "GET /get_messages?user=user&since=1723134981000 HTTP/1.1" 200 -
+DEBUG:root:Authorization: Basic cGFuZWw6cGFuZWwyMzQ=
+INFO:werkzeug:127.0.0.1 - - [08/Aug/2024 20:00:40] "GET /get_orders HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:00:42] "GET /get_messages?user=user&since=1723134981000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:00:44] "GET /get_messages?user=user&since=1723134981000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:00:46] "GET /get_messages?user=user&since=1723134981000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:00:48] "GET /get_messages?user=user&since=1723134981000 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Aug/2024 20:00:48] "OPTIONS /get_messages HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Aug/2024 20:00:49] "GET /get_messages HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:00:50] "GET /get_messages?user=user&since=1723134981000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:00:52] "GET /get_messages?user=user&since=1723134981000 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Aug/2024 20:00:52] "GET /get_messages HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:00:54] "GET /get_messages?user=user&since=1723134981000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:00:56] "GET /get_messages?user=user&since=1723134981000 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Aug/2024 20:00:57] "OPTIONS /get_messages HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Aug/2024 20:00:58] "GET /get_messages HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:00:58] "GET /get_messages?user=user&since=1723134981000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:01:00] "GET /get_messages?user=user&since=1723134981000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:01:02] "GET /get_messages?user=user&since=1723134981000 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Aug/2024 20:01:02] "GET /get_messages HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:01:04] "GET /get_messages?user=user&since=1723134981000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:01:06] "GET /get_messages?user=user&since=1723134981000 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Aug/2024 20:01:06] "OPTIONS /send_message HTTP/1.1" 200 -
+DEBUG:root:Send message data: {'sender': 'admin', 'receiver': 'user', 'message': 'Good evening '}
+INFO:werkzeug:127.0.0.1 - - [08/Aug/2024 20:01:07] "OPTIONS /get_messages HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Aug/2024 20:01:07] "[35m[1mPOST /send_message HTTP/1.1[0m" 201 -
+INFO:werkzeug:127.0.0.1 - - [08/Aug/2024 20:01:08] "GET /get_messages HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:01:08] "GET /get_messages?user=user&since=1723134981000 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Aug/2024 20:01:08] "GET /get_messages HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:01:10] "GET /get_messages?user=user&since=1723136467000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:01:12] "GET /get_messages?user=user&since=1723136467000 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Aug/2024 20:01:12] "GET /get_messages HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:01:14] "GET /get_messages?user=user&since=1723136467000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:01:16] "GET /get_messages?user=user&since=1723136467000 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Aug/2024 20:01:17] "OPTIONS /get_messages HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Aug/2024 20:01:17] "GET /get_messages HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:01:18] "GET /get_messages?user=user&since=1723136467000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:01:20] "GET /get_messages?user=user&since=1723136467000 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Aug/2024 20:01:22] "GET /get_messages HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:01:22] "GET /get_messages?user=user&since=1723136467000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:01:24] "GET /get_messages?user=user&since=1723136467000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:01:26] "GET /get_messages?user=user&since=1723136467000 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Aug/2024 20:01:27] "OPTIONS /get_messages HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Aug/2024 20:01:28] "GET /get_messages HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:01:28] "GET /get_messages?user=user&since=1723136467000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:01:30] "GET /get_messages?user=user&since=1723136467000 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Aug/2024 20:01:32] "GET /get_messages HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:01:32] "GET /get_messages?user=user&since=1723136467000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:01:34] "GET /get_messages?user=user&since=1723136467000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:01:36] "GET /get_messages?user=user&since=1723136467000 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Aug/2024 20:01:36] "OPTIONS /send_message HTTP/1.1" 200 -
+DEBUG:root:Send message data: {'sender': 'admin', 'receiver': 'user', 'message': 'Hi how are you!'}
+INFO:werkzeug:127.0.0.1 - - [08/Aug/2024 20:01:37] "OPTIONS /get_messages HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Aug/2024 20:01:37] "[35m[1mPOST /send_message HTTP/1.1[0m" 201 -
+INFO:werkzeug:127.0.0.1 - - [08/Aug/2024 20:01:38] "GET /get_messages HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:01:38] "GET /get_messages?user=user&since=1723136467000 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Aug/2024 20:01:38] "GET /get_messages HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:01:40] "GET /get_messages?user=user&since=1723136497000 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Aug/2024 20:01:42] "GET /get_messages HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:01:42] "GET /get_messages?user=user&since=1723136497000 HTTP/1.1" 200 -
+DEBUG:root:Authorization: Basic cGFuZWw6cGFuZWwyMzQ=
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:01:44] "GET /get_orders HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Aug/2024 20:01:47] "OPTIONS /get_messages HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Aug/2024 20:01:47] "GET /get_messages HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Aug/2024 20:01:52] "GET /get_messages HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Aug/2024 20:01:52] "OPTIONS /get_orders HTTP/1.1" 200 -
+DEBUG:root:Authorization: Basic cGFuZWw6cGFuZWwyMzQ=
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:01:54] "GET /get_orders HTTP/1.1" 200 -
+DEBUG:root:Authorization: Basic cGFuZWw6cGFuZWwyMzQ=
+INFO:werkzeug:127.0.0.1 - - [08/Aug/2024 20:01:54] "GET /get_orders HTTP/1.1" 200 -
+DEBUG:root:Authorization: Basic cGFuZWw6cGFuZWwyMzQ=
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:01:55] "GET /get_orders HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Aug/2024 20:02:03] "OPTIONS /update_order_status HTTP/1.1" 200 -
+DEBUG:root:Authorization: Basic cGFuZWw6cGFuZWwyMzQ=
+DEBUG:root:Update order status data: {'order_id': 'ORD-6DC127B9', 'status': 'Pending'}
+INFO:werkzeug:127.0.0.1 - - [08/Aug/2024 20:02:04] "POST /update_order_status HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Aug/2024 20:02:05] "OPTIONS /get_orders HTTP/1.1" 200 -
+DEBUG:root:Authorization: Basic cGFuZWw6cGFuZWwyMzQ=
+INFO:werkzeug:127.0.0.1 - - [08/Aug/2024 20:02:06] "GET /get_orders HTTP/1.1" 200 -
+DEBUG:root:Authorization: Basic cGFuZWw6cGFuZWwyMzQ=
+DEBUG:root:Update order status data: {'order_id': 'ORD-6DC127B9', 'status': 'Pending'}
+INFO:werkzeug:127.0.0.1 - - [08/Aug/2024 20:02:07] "[33mPOST /update_order_status HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [08/Aug/2024 20:03:01] "OPTIONS /login HTTP/1.1" 200 -
+DEBUG:root:Login data: {'username': 'panel', 'password': 'panel234'}
+INFO:werkzeug:127.0.0.1 - - [08/Aug/2024 20:03:02] "POST /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Aug/2024 20:03:03] "OPTIONS /get_orders HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Aug/2024 20:03:03] "OPTIONS /login HTTP/1.1" 200 -
+DEBUG:root:Authorization: Basic cGFuZWw6cGFuZWwyMzQ=
+INFO:werkzeug:127.0.0.1 - - [08/Aug/2024 20:03:04] "GET /get_orders HTTP/1.1" 200 -
+DEBUG:root:Login data: {'username': 'panel', 'password': 'panel234'}
+INFO:werkzeug:127.0.0.1 - - [08/Aug/2024 20:03:04] "POST /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Aug/2024 20:03:05] "OPTIONS /get_orders HTTP/1.1" 200 -
+DEBUG:root:Authorization: Basic cGFuZWw6cGFuZWwyMzQ=
+INFO:werkzeug:127.0.0.1 - - [08/Aug/2024 20:03:05] "GET /get_orders HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Aug/2024 20:03:10] "OPTIONS /update_order_status HTTP/1.1" 200 -
+DEBUG:root:Authorization: Basic cGFuZWw6cGFuZWwyMzQ=
+DEBUG:root:Update order status data: {'order_id': 'ORD-6DC127B9', 'status': 'Shipped'}
+INFO:werkzeug:127.0.0.1 - - [08/Aug/2024 20:03:11] "POST /update_order_status HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Aug/2024 20:03:12] "OPTIONS /get_orders HTTP/1.1" 200 -
+DEBUG:root:Authorization: Basic cGFuZWw6cGFuZWwyMzQ=
+INFO:werkzeug:127.0.0.1 - - [08/Aug/2024 20:03:12] "GET /get_orders HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Aug/2024 20:03:31] "OPTIONS /get_messages HTTP/1.1" 200 -
+DEBUG:root:Authorization: Basic cGFuZWw6cGFuZWwyMzQ=
+ * Serving Flask app 'app'
+ * Debug mode: on
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.16:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 761-506-798
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:04:00] "GET /get_messages?user=user&since=0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Aug/2024 20:04:00] "OPTIONS /get_messages HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Aug/2024 20:04:01] "GET /get_messages HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:04:02] "GET /get_messages?user=user&since=1723136497000 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Aug/2024 20:04:02] "OPTIONS /send_message HTTP/1.1" 200 -
+DEBUG:root:Send message data: {'sender': 'admin', 'receiver': 'user', 'message': 'Vipi'}
+INFO:werkzeug:127.0.0.1 - - [08/Aug/2024 20:04:03] "[35m[1mPOST /send_message HTTP/1.1[0m" 201 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:04:03] "GET /get_messages?user=user&since=1723136497000 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Aug/2024 20:04:04] "GET /get_messages HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Aug/2024 20:04:06] "GET /get_messages HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:04:06] "GET /get_messages?user=user&since=0 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:04:06] "[35m[1mGET /get_messages?user=user&since=0 HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/home/mahlon/myenv/lib/python3.11/site-packages/flask/app.py", line 1498, in __call__
+    return self.wsgi_app(environ, start_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mahlon/myenv/lib/python3.11/site-packages/flask/app.py", line 1476, in wsgi_app
+    response = self.handle_exception(e)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mahlon/myenv/lib/python3.11/site-packages/flask_cors/extension.py", line 178, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^^^
+  File "/home/mahlon/myenv/lib/python3.11/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mahlon/myenv/lib/python3.11/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mahlon/myenv/lib/python3.11/site-packages/flask_cors/extension.py", line 178, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^^^
+  File "/home/mahlon/myenv/lib/python3.11/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mahlon/myenv/lib/python3.11/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mahlon/Documents/SwiftCourierBackEnd/app.py", line 108, in get_messages
+    cursor.execute(sql, values)
+  File "/home/mahlon/myenv/lib/python3.11/site-packages/mariadb/cursors.py", line 309, in execute
+    self._execute_text(self._transformed_statement)
+mariadb.InterfaceError: Commands out of sync; you can't run this command now
+INFO:werkzeug:127.0.0.1 - - [08/Aug/2024 20:04:10] "OPTIONS /send_message HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Aug/2024 20:04:10] "OPTIONS /get_messages HTTP/1.1" 200 -
+DEBUG:root:Send message data: {'sender': 'admin', 'receiver': 'user', 'message': 'Vipi'}
+INFO:werkzeug:127.0.0.1 - - [08/Aug/2024 20:04:10] "[35m[1mPOST /send_message HTTP/1.1[0m" 201 -
+INFO:werkzeug:127.0.0.1 - - [08/Aug/2024 20:04:11] "GET /get_messages HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Aug/2024 20:04:11] "GET /get_messages HTTP/1.1" 200 -
+DEBUG:root:Authorization: Basic cGFuZWw6cGFuZWwyMzQ=
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:04:12] "GET /get_orders HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Aug/2024 20:04:15] "GET /get_messages HTTP/1.1" 200 -
+ * Serving Flask app 'app'
+ * Debug mode: on
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.16:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 761-506-798
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:04:23] "GET /get_messages?user=user&since=0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Aug/2024 20:04:24] "OPTIONS /login HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:04:24] "GET /get_messages?user=user&since=1723136650000 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Aug/2024 20:04:25] "OPTIONS /get_messages HTTP/1.1" 200 -
+DEBUG:root:Login data: {'username': 'panel', 'password': 'panel'}
+INFO:werkzeug:127.0.0.1 - - [08/Aug/2024 20:04:25] "[31m[1mPOST /login HTTP/1.1[0m" 401 -
+INFO:werkzeug:127.0.0.1 - - [08/Aug/2024 20:04:25] "GET /get_messages HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:04:26] "GET /get_messages?user=user&since=1723136650000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:04:28] "GET /get_messages?user=user&since=1723136650000 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Aug/2024 20:04:30] "GET /get_messages HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:04:30] "GET /get_messages?user=user&since=1723136650000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:04:32] "GET /get_messages?user=user&since=1723136650000 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Aug/2024 20:04:33] "OPTIONS /login HTTP/1.1" 200 -
+DEBUG:root:Login data: {'username': 'panel', 'password': 'panel234'}
+INFO:werkzeug:127.0.0.1 - - [08/Aug/2024 20:04:34] "POST /login HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:04:34] "GET /get_messages?user=user&since=1723136650000 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Aug/2024 20:04:35] "OPTIONS /get_orders HTTP/1.1" 200 -
+DEBUG:root:Authorization: Basic cGFuZWw6cGFuZWwyMzQ=
+INFO:werkzeug:127.0.0.1 - - [08/Aug/2024 20:04:36] "GET /get_orders HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:04:36] "GET /get_messages?user=user&since=1723136650000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:04:38] "GET /get_messages?user=user&since=1723136650000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:04:40] "GET /get_messages?user=user&since=1723136650000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:04:42] "GET /get_messages?user=user&since=1723136650000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:04:44] "GET /get_messages?user=user&since=1723136650000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:04:46] "GET /get_messages?user=user&since=1723136650000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:04:48] "GET /get_messages?user=user&since=1723136650000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:04:50] "GET /get_messages?user=user&since=1723136650000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:04:52] "GET /get_messages?user=user&since=1723136650000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:04:55] "GET /get_messages?user=user&since=1723136650000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:04:56] "GET /get_messages?user=user&since=1723136650000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:04:59] "GET /get_messages?user=user&since=1723136650000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:05:01] "GET /get_messages?user=user&since=1723136650000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:05:02] "GET /get_messages?user=user&since=1723136650000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:05:04] "GET /get_messages?user=user&since=1723136650000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:05:07] "GET /get_messages?user=user&since=1723136650000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:05:08] "GET /get_messages?user=user&since=1723136650000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:05:11] "GET /get_messages?user=user&since=1723136650000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:05:12] "GET /get_messages?user=user&since=1723136650000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:05:15] "GET /get_messages?user=user&since=1723136650000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:05:17] "GET /get_messages?user=user&since=1723136650000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:05:19] "GET /get_messages?user=user&since=1723136650000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:05:21] "GET /get_messages?user=user&since=1723136650000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:05:23] "GET /get_messages?user=user&since=1723136650000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:05:25] "GET /get_messages?user=user&since=1723136650000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:05:27] "GET /get_messages?user=user&since=1723136650000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:05:29] "GET /get_messages?user=user&since=1723136650000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:05:31] "GET /get_messages?user=user&since=1723136650000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:05:33] "GET /get_messages?user=user&since=1723136650000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:05:35] "GET /get_messages?user=user&since=1723136650000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:05:37] "GET /get_messages?user=user&since=1723136650000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:05:39] "GET /get_messages?user=user&since=1723136650000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:05:41] "GET /get_messages?user=user&since=1723136650000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:05:43] "GET /get_messages?user=user&since=1723136650000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:05:45] "GET /get_messages?user=user&since=1723136650000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:05:47] "GET /get_messages?user=user&since=1723136650000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:05:49] "GET /get_messages?user=user&since=1723136650000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:05:51] "GET /get_messages?user=user&since=1723136650000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:05:53] "GET /get_messages?user=user&since=1723136650000 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Aug/2024 20:05:53] "OPTIONS /login HTTP/1.1" 200 -
+DEBUG:root:Login data: {'username': 'panel', 'password': 'panel234'}
+INFO:werkzeug:127.0.0.1 - - [08/Aug/2024 20:05:54] "POST /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Aug/2024 20:05:54] "OPTIONS /get_orders HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:05:55] "GET /get_messages?user=user&since=1723136650000 HTTP/1.1" 200 -
+DEBUG:root:Authorization: Basic cGFuZWw6cGFuZWwyMzQ=
+INFO:werkzeug:127.0.0.1 - - [08/Aug/2024 20:05:55] "GET /get_orders HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:05:57] "GET /get_messages?user=user&since=1723136650000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:05:59] "GET /get_messages?user=user&since=1723136650000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:06:01] "GET /get_messages?user=user&since=1723136650000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:06:03] "GET /get_messages?user=user&since=1723136650000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:06:05] "GET /get_messages?user=user&since=1723136650000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:06:07] "GET /get_messages?user=user&since=1723136650000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:06:09] "GET /get_messages?user=user&since=1723136650000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:06:11] "GET /get_messages?user=user&since=1723136650000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:06:13] "GET /get_messages?user=user&since=1723136650000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:06:15] "GET /get_messages?user=user&since=1723136650000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:06:17] "GET /get_messages?user=user&since=1723136650000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:06:19] "GET /get_messages?user=user&since=1723136650000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:06:21] "GET /get_messages?user=user&since=1723136650000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:06:23] "GET /get_messages?user=user&since=1723136650000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:06:25] "GET /get_messages?user=user&since=1723136650000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:06:27] "GET /get_messages?user=user&since=1723136650000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:06:29] "GET /get_messages?user=user&since=1723136650000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:06:31] "GET /get_messages?user=user&since=1723136650000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:06:33] "GET /get_messages?user=user&since=1723136650000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:06:35] "GET /get_messages?user=user&since=1723136650000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:06:37] "GET /get_messages?user=user&since=1723136650000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:06:39] "GET /get_messages?user=user&since=1723136650000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:06:41] "GET /get_messages?user=user&since=1723136650000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:06:43] "GET /get_messages?user=user&since=1723136650000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:06:45] "GET /get_messages?user=user&since=1723136650000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:06:47] "GET /get_messages?user=user&since=1723136650000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:06:49] "GET /get_messages?user=user&since=1723136650000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:06:51] "GET /get_messages?user=user&since=1723136650000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:06:53] "GET /get_messages?user=user&since=1723136650000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:06:55] "GET /get_messages?user=user&since=1723136650000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:06:57] "GET /get_messages?user=user&since=1723136650000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:06:59] "GET /get_messages?user=user&since=1723136650000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:07:01] "GET /get_messages?user=user&since=1723136650000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:07:03] "GET /get_messages?user=user&since=1723136650000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:08:29] "GET /get_messages?user=user&since=1723136650000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:08:31] "GET /get_messages?user=user&since=1723136650000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:08:33] "GET /get_messages?user=user&since=1723136650000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:08:45] "GET /get_messages?user=user&since=1723136650000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:08:46] "GET /get_messages?user=user&since=1723136650000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:08:48] "GET /get_messages?user=user&since=1723136650000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:08:50] "GET /get_messages?user=user&since=1723136650000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:08:52] "GET /get_messages?user=user&since=1723136650000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:08:55] "GET /get_messages?user=user&since=1723136650000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:08:57] "GET /get_messages?user=user&since=1723136650000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:08:59] "GET /get_messages?user=user&since=1723136650000 HTTP/1.1" 200 -
+DEBUG:root:Send message data: {'sender': 'user', 'receiver': 'admin', 'message': "' OR '1'='1'; SELECT * FROM orders --"}
+ * Serving Flask app 'app'
+ * Debug mode: on
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.16:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 761-506-798
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:09:18] "GET /get_messages?user=user&since=1723136650000 HTTP/1.1" 200 -
+DEBUG:root:Send message data: {'sender': 'user', 'receiver': 'admin', 'message': "' OR '1'='1'; SELECT * FROM orders --"}
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:09:18] "[35m[1mPOST /send_message HTTP/1.1[0m" 201 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:09:18] "GET /get_messages?user=user&since=1723136939000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:09:20] "GET /get_messages?user=user&since=1723136958000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:09:22] "GET /get_messages?user=user&since=1723136958000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:09:24] "GET /get_messages?user=user&since=1723136958000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:09:26] "GET /get_messages?user=user&since=1723136958000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:09:28] "GET /get_messages?user=user&since=1723136958000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:09:31] "GET /get_messages?user=user&since=1723136958000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:09:32] "GET /get_messages?user=user&since=1723136958000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:09:34] "GET /get_messages?user=user&since=1723136958000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:09:36] "GET /get_messages?user=user&since=1723136958000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:09:38] "GET /get_messages?user=user&since=1723136958000 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Aug/2024 20:09:38] "OPTIONS /get_messages HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Aug/2024 20:09:38] "OPTIONS /get_messages HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Aug/2024 20:09:39] "GET /get_messages HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Aug/2024 20:09:39] "GET /get_messages HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:09:40] "GET /get_messages?user=user&since=1723136958000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:09:42] "GET /get_messages?user=user&since=1723136958000 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Aug/2024 20:09:43] "GET /get_messages HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:09:44] "GET /get_messages?user=user&since=1723136958000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:09:46] "GET /get_messages?user=user&since=1723136958000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:09:48] "GET /get_messages?user=user&since=1723136958000 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Aug/2024 20:09:48] "OPTIONS /get_messages HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Aug/2024 20:09:49] "GET /get_messages HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:09:50] "GET /get_messages?user=user&since=1723136958000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:09:52] "GET /get_messages?user=user&since=1723136958000 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Aug/2024 20:09:53] "GET /get_messages HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:09:54] "GET /get_messages?user=user&since=1723136958000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:09:56] "GET /get_messages?user=user&since=1723136958000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:09:58] "GET /get_messages?user=user&since=1723136958000 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Aug/2024 20:09:58] "OPTIONS /get_messages HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Aug/2024 20:09:59] "GET /get_messages HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:10:00] "GET /get_messages?user=user&since=1723136958000 HTTP/1.1" 200 -
+DEBUG:root:Send message data: {'sender': 'user', 'receiver': 'admin', 'message': "' OR '1'='1'; SELECT * FROM messages --"}
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:10:02] "GET /get_messages?user=user&since=1723136958000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:10:02] "[35m[1mPOST /send_message HTTP/1.1[0m" 201 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:10:02] "GET /get_messages?user=user&since=1723136958000 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Aug/2024 20:10:03] "GET /get_messages HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:10:04] "GET /get_messages?user=user&since=1723137002000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:10:06] "GET /get_messages?user=user&since=1723137002000 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Aug/2024 20:10:08] "OPTIONS /get_messages HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:10:08] "GET /get_messages?user=user&since=1723137002000 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Aug/2024 20:10:09] "GET /get_messages HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:10:10] "GET /get_messages?user=user&since=1723137002000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:10:12] "GET /get_messages?user=user&since=1723137002000 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Aug/2024 20:10:13] "GET /get_messages HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:10:14] "GET /get_messages?user=user&since=1723137002000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:10:16] "GET /get_messages?user=user&since=1723137002000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:10:18] "GET /get_messages?user=user&since=1723137002000 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Aug/2024 20:10:18] "OPTIONS /get_messages HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Aug/2024 20:10:19] "GET /get_messages HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:10:20] "GET /get_messages?user=user&since=1723137002000 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Aug/2024 20:10:21] "OPTIONS /get_orders HTTP/1.1" 200 -
+DEBUG:root:Authorization: Basic cGFuZWw6cGFuZWwyMzQ=
+INFO:werkzeug:127.0.0.1 - - [08/Aug/2024 20:10:22] "GET /get_orders HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:10:22] "GET /get_messages?user=user&since=1723137002000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:10:24] "GET /get_messages?user=user&since=1723137002000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:10:26] "GET /get_messages?user=user&since=1723137002000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:10:28] "GET /get_messages?user=user&since=1723137002000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:10:30] "GET /get_messages?user=user&since=1723137002000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:10:32] "GET /get_messages?user=user&since=1723137002000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:10:34] "GET /get_messages?user=user&since=1723137002000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:10:36] "GET /get_messages?user=user&since=1723137002000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:10:38] "GET /get_messages?user=user&since=1723137002000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:10:40] "GET /get_messages?user=user&since=1723137002000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:10:42] "GET /get_messages?user=user&since=1723137002000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:10:44] "GET /get_messages?user=user&since=1723137002000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:10:46] "GET /get_messages?user=user&since=1723137002000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:10:48] "GET /get_messages?user=user&since=1723137002000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:10:50] "GET /get_messages?user=user&since=1723137002000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:10:52] "GET /get_messages?user=user&since=1723137002000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:10:54] "GET /get_messages?user=user&since=1723137002000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:10:56] "GET /get_messages?user=user&since=1723137002000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:10:58] "GET /get_messages?user=user&since=1723137002000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:11:00] "GET /get_messages?user=user&since=1723137002000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:11:02] "GET /get_messages?user=user&since=1723137002000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:11:04] "GET /get_messages?user=user&since=1723137002000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:11:07] "GET /get_messages?user=user&since=1723137002000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:11:09] "GET /get_messages?user=user&since=1723137002000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:15:35] "GET /get_messages?user=user&since=1723137002000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:15:37] "GET /get_messages?user=user&since=1723137002000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:15:39] "GET /get_messages?user=user&since=1723137002000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:15:41] "GET /get_messages?user=user&since=1723137002000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:15:43] "GET /get_messages?user=user&since=1723137002000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:15:45] "GET /get_messages?user=user&since=1723137002000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:15:47] "GET /get_messages?user=user&since=1723137002000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:15:49] "GET /get_messages?user=user&since=1723137002000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:15:51] "GET /get_messages?user=user&since=1723137002000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:15:53] "GET /get_messages?user=user&since=1723137002000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:15:55] "GET /get_messages?user=user&since=1723137002000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:15:57] "GET /get_messages?user=user&since=1723137002000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:15:59] "GET /get_messages?user=user&since=1723137002000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:16:02] "GET /get_messages?user=user&since=1723137002000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:16:03] "GET /get_messages?user=user&since=1723137002000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:16:06] "GET /get_messages?user=user&since=1723137002000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:16:07] "GET /get_messages?user=user&since=1723137002000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:16:09] "GET /get_messages?user=user&since=1723137002000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:16:11] "GET /get_messages?user=user&since=1723137002000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:16:13] "GET /get_messages?user=user&since=1723137002000 HTTP/1.1" 200 -
+DEBUG:root:Send message data: {'sender': 'user', 'receiver': 'admin', 'message': "' ; DROP TABLE orders; --"}
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:16:16] "[35m[1mPOST /send_message HTTP/1.1[0m" 201 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:16:17] "GET /get_messages?user=user&since=1723137002000 HTTP/1.1" 200 -
+ * Serving Flask app 'app'
+ * Debug mode: on
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.16:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 761-506-798
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:17:58] "GET /get_messages?user=user&since=0 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:18:00] "GET /get_messages?user=user&since=1723137376000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:18:02] "GET /get_messages?user=user&since=1723137376000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:18:04] "GET /get_messages?user=user&since=1723137376000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:18:06] "GET /get_messages?user=user&since=1723137376000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:18:08] "GET /get_messages?user=user&since=1723137376000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:18:10] "GET /get_messages?user=user&since=1723137376000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:18:12] "GET /get_messages?user=user&since=1723137376000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:18:14] "GET /get_messages?user=user&since=1723137376000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:18:16] "GET /get_messages?user=user&since=1723137376000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:18:18] "GET /get_messages?user=user&since=1723137376000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:18:20] "GET /get_messages?user=user&since=1723137376000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:18:22] "GET /get_messages?user=user&since=1723137376000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:18:24] "GET /get_messages?user=user&since=1723137376000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:18:26] "GET /get_messages?user=user&since=1723137376000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:18:28] "GET /get_messages?user=user&since=1723137376000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:18:30] "GET /get_messages?user=user&since=1723137376000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:18:32] "GET /get_messages?user=user&since=1723137376000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:18:34] "GET /get_messages?user=user&since=1723137376000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:18:36] "GET /get_messages?user=user&since=1723137376000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:18:38] "GET /get_messages?user=user&since=1723137376000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:18:40] "GET /get_messages?user=user&since=1723137376000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:18:42] "GET /get_messages?user=user&since=1723137376000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:18:44] "GET /get_messages?user=user&since=1723137376000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:18:46] "GET /get_messages?user=user&since=1723137376000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:18:48] "GET /get_messages?user=user&since=1723137376000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:18:50] "GET /get_messages?user=user&since=1723137376000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:18:52] "GET /get_messages?user=user&since=1723137376000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:18:54] "GET /get_messages?user=user&since=1723137376000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:18:56] "GET /get_messages?user=user&since=1723137376000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:18:58] "GET /get_messages?user=user&since=1723137376000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:19:00] "GET /get_messages?user=user&since=1723137376000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:19:02] "GET /get_messages?user=user&since=1723137376000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:19:04] "GET /get_messages?user=user&since=1723137376000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:19:06] "GET /get_messages?user=user&since=1723137376000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:19:08] "GET /get_messages?user=user&since=1723137376000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:19:10] "GET /get_messages?user=user&since=1723137376000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:19:12] "GET /get_messages?user=user&since=1723137376000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:19:14] "GET /get_messages?user=user&since=1723137376000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:19:16] "GET /get_messages?user=user&since=1723137376000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:19:19] "GET /get_messages?user=user&since=1723137376000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:19:20] "GET /get_messages?user=user&since=1723137376000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:19:22] "GET /get_messages?user=user&since=1723137376000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:19:24] "GET /get_messages?user=user&since=1723137376000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:19:26] "GET /get_messages?user=user&since=1723137376000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:19:28] "GET /get_messages?user=user&since=1723137376000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:19:30] "GET /get_messages?user=user&since=1723137376000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:19:32] "GET /get_messages?user=user&since=1723137376000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:19:34] "GET /get_messages?user=user&since=1723137376000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:19:36] "GET /get_messages?user=user&since=1723137376000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:19:38] "GET /get_messages?user=user&since=1723137376000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:19:40] "GET /get_messages?user=user&since=1723137376000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:19:42] "GET /get_messages?user=user&since=1723137376000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:19:44] "GET /get_messages?user=user&since=1723137376000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:19:46] "GET /get_messages?user=user&since=1723137376000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:19:48] "GET /get_messages?user=user&since=1723137376000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:19:50] "GET /get_messages?user=user&since=1723137376000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:19:52] "GET /get_messages?user=user&since=1723137376000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:19:54] "GET /get_messages?user=user&since=1723137376000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:19:56] "GET /get_messages?user=user&since=1723137376000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:19:58] "GET /get_messages?user=user&since=1723137376000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:20:00] "GET /get_messages?user=user&since=1723137376000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:20:02] "GET /get_messages?user=user&since=1723137376000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:20:04] "GET /get_messages?user=user&since=1723137376000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:20:06] "GET /get_messages?user=user&since=1723137376000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:20:08] "GET /get_messages?user=user&since=1723137376000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:20:10] "GET /get_messages?user=user&since=1723137376000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:20:12] "GET /get_messages?user=user&since=1723137376000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:20:14] "GET /get_messages?user=user&since=1723137376000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:20:16] "GET /get_messages?user=user&since=1723137376000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:20:18] "GET /get_messages?user=user&since=1723137376000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:20:20] "GET /get_messages?user=user&since=1723137376000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:20:22] "GET /get_messages?user=user&since=1723137376000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:20:24] "GET /get_messages?user=user&since=1723137376000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:20:26] "GET /get_messages?user=user&since=1723137376000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:20:28] "GET /get_messages?user=user&since=1723137376000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:20:30] "GET /get_messages?user=user&since=1723137376000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:20:32] "GET /get_messages?user=user&since=1723137376000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:20:34] "GET /get_messages?user=user&since=1723137376000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:20:36] "GET /get_messages?user=user&since=1723137376000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:20:38] "GET /get_messages?user=user&since=1723137376000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:20:40] "GET /get_messages?user=user&since=1723137376000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:20:42] "GET /get_messages?user=user&since=1723137376000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:20:44] "GET /get_messages?user=user&since=1723137376000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:20:46] "GET /get_messages?user=user&since=1723137376000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:20:48] "GET /get_messages?user=user&since=1723137376000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:20:50] "GET /get_messages?user=user&since=1723137376000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:20:52] "GET /get_messages?user=user&since=1723137376000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:20:54] "GET /get_messages?user=user&since=1723137376000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:20:56] "GET /get_messages?user=user&since=1723137376000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:20:58] "GET /get_messages?user=user&since=1723137376000 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Aug/2024 20:53:13] "OPTIONS /login HTTP/1.1" 200 -
+DEBUG:root:Login data: {'username': 'panel', 'password': 'panel234'}
+INFO:werkzeug:127.0.0.1 - - [08/Aug/2024 20:53:14] "POST /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Aug/2024 20:53:15] "OPTIONS /get_orders HTTP/1.1" 200 -
+DEBUG:root:Authorization: Basic cGFuZWw6cGFuZWwyMzQ=
+INFO:werkzeug:127.0.0.1 - - [08/Aug/2024 20:53:15] "GET /get_orders HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:56:12] "GET /get_messages?user=user&since=1723137376000 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.0.11 - - [08/Aug/2024 20:56:14] "GET /get_messages?user=user&since=1723137376000 HTTP/1.1" 200 -
+ * Serving Flask app 'app'
+ * Debug mode: on
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.121.201:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 761-506-798

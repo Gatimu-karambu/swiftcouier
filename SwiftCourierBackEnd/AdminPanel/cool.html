@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karate Fight Animation</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            background: #000;
+        }
+        canvas {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="karateCanvas"></canvas>
+    <script>
+        const canvas = document.getElementById('karateCanvas');
+        const ctx = canvas.getContext('2d');
+        let width, height;
+
+        function resize() {
+            width = canvas.width = window.innerWidth;
+            height = canvas.height = window.innerHeight;
+        }
+
+        class Character {
+            constructor(x, y, color) {
+                this.x = x;
+                this.y = y;
+                this.color = color;
+                this.frame = 0;
+                this.frameMax = 3;
+                this.isAttacking = false;
+            }
+
+            draw() {
+                ctx.fillStyle = this.color;
+
+                // Draw head
+                ctx.beginPath();
+                ctx.arc(this.x, this.y - 60, 20, 0, Math.PI * 2);
+                ctx.fill();
+
+                // Draw body
+                ctx.fillRect(this.x - 10, this.y - 50, 20, 50);
+
+                // Draw legs
+                ctx.fillRect(this.x - 20, this.y, 15, 30);  // Left leg
+                ctx.fillRect(this.x + 5, this.y, 15, 30);   // Right leg
+
+                // Draw arms based on frame
+                if (this.isAttacking) {
+                    ctx.fillRect(this.x + 10, this.y - 40, 30, 10);  // Right arm attacking
+                } else {
+                    if (this.frame === 0) {
+                        ctx.fillRect(this.x - 25, this.y - 40, 15, 30);  // Left arm defending
+                        ctx.fillRect(this.x + 10, this.y - 40, 15, 30);  // Right arm defending
+                    } else if (this.frame === 1) {
+                        ctx.fillRect(this.x - 40, this.y - 30, 30, 10);   // Left arm
+                        ctx.fillRect(this.x + 10, this.y - 30, 30, 10);   // Right arm
+                    } else if (this.frame === 2) {
+                        ctx.fillRect(this.x - 30, this.y - 50, 15, 30);  // Left arm up
+                        ctx.fillRect(this.x + 15, this.y - 50, 15, 30);  // Right arm up
+                    }
+                }
+            }
+
+            update() {
+                this.frame = (this.frame + 1) % this.frameMax;
+            }
+
+            attack() {
+                this.isAttacking = true;
+                setTimeout(() => this.isAttacking = false, 500);
+            }
+        }
+
+        const attacker = new Character(300, height / 2 + 50, 'red');
+        const defender = new Character(800, height / 2 + 50, 'blue');
+
+        function animateFight() {
+            ctx.clearRect(0, 0, width, height);
+
+            attacker.update();
+            defender.update();
+
+            attacker.draw();
+            defender.draw();
+
+            if (attacker.isAttacking && attacker.x + 70 >= defender.x) {
+                defender.x += 5;  // Defender gets pushed back
+            } else if (!attacker.isAttacking) {
+                attacker.x += 3;
+            }
+
+            if (attacker.x >= width - 200) {
+                attacker.x = 300;  // Reset position for continuous fighting
+            }
+
+            requestAnimationFrame(animateFight);
+        }
+
+        function init() {
+            resize();
+            window.addEventListener('resize', resize);
+
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'a') {
+                    attacker.attack();
+                }
+            });
+
+            animateFight();
+        }
+
+        init();
+    </script>
+</body>
+</html>
